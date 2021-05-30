@@ -36,6 +36,8 @@ package com.ambuj.arrays.leetcode.arrays;
  * nums contains distinct values sorted in ascending order.
  * -104 <= target <= 104
  */
+
+// TODO: Complexity is O(n)...reduce to nlog(n)
 public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
         int i = 0;
