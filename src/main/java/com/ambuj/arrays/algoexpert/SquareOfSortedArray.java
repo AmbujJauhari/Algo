@@ -1,4 +1,4 @@
-package com.ambuj.arrays;
+package com.ambuj.arrays.algoexpert;
 
 import java.util.Arrays;
 
