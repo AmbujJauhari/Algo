@@ -16,21 +16,21 @@ public class SpiralMatrix {
         while (topRowIdx < bottomRowIdx && leftColumnIdx < rightColumnIdx) {
             //print first row
             for (i = leftColumnIdx; i < rightColumnIdx; i++) {
-                System.out.println(matrix[topRowIdx][i]);
+                integers.add(matrix[topRowIdx][i]);
             }
             //increment first row
             topRowIdx++;
 
             //print right column
             for (i = topRowIdx; i < bottomRowIdx; i++) {
-                System.out.println(matrix[i][rightColumnIdx - 1]);
+                integers.add(matrix[i][rightColumnIdx - 1]);
             }
             rightColumnIdx--;
 
             //print bottom row
             if (topRowIdx < bottomRowIdx) {
                 for (i = rightColumnIdx - 1; i >= leftColumnIdx; i--) {
-                    System.out.println(matrix[bottomRowIdx - 1][i]);
+                    integers.add(matrix[bottomRowIdx - 1][i]);
                 }
                 bottomRowIdx--;
             }
@@ -38,7 +38,7 @@ public class SpiralMatrix {
             //print left row
             if (leftColumnIdx < rightColumnIdx) {
                 for (i = bottomRowIdx - 1; i >= topRowIdx; i--) {
-                    System.out.println(matrix[i][leftColumnIdx]);
+                    integers.add(matrix[i][leftColumnIdx]);
                 }
                 leftColumnIdx++;
             }
